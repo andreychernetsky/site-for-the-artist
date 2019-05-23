@@ -1,0 +1,36 @@
+@import "partials/mixins";
+@import "block/card";
+
+.wrapper {
+    background-color: #eee;
+
+}
+
+html {
+    height: 100%;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.inner {
+    @include spaceBetween
+}
+.content-left {
+    width: 50%;
+}
+.content-right {
+    width: 50%;
+    //@include line;
+}
+@media screen and (max-width: 760px)  {
+    .inner {
+        @include column;
+    }
+    .content-right,
+    .content-left{
+        float: none;
+        width: 100%;
+
+    }
+}
+
+
