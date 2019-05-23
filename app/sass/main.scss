@@ -1,5 +1,7 @@
+@import "partials/params";
 @import "partials/mixins";
 @import "block/card";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:400,700&amp;subset=cyrillic" rel="stylesheet');
 
 .wrapper {
     background-color: #eee;
@@ -7,12 +9,19 @@
 }
 
 html {
-    height: 100%;
     font-size: 100%;
     font-family: 'Roboto', sans-serif;
 }
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
 .inner {
-    @include spaceBetween
+    @include space;
 }
 .content-left {
     width: 50%;
@@ -21,14 +30,19 @@ html {
     width: 50%;
     //@include line;
 }
+.view-port {
+    width: $view-port;
+}
 @media screen and (max-width: 760px)  {
     .inner {
-        @include column;
+        @include space;
     }
-    .content-right,
-    .content-left{
-        float: none;
-        width: 100%;
+    .content-right{
+        width: 50%;
+    }
+    .content-left {
+
+        width: 50%;
 
     }
 }

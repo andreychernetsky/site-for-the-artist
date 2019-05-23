@@ -3,7 +3,7 @@
     align-items: center;
     flex-direction: column;
 }
-@mixin spaceBetween {
+@mixin space {
         display: flex;
         justify-content: space-between;
         align-items: center;
