@@ -1,0 +1,83 @@
+.CardProduct {
+    margin-bottom: 50px;
+    font-family: 'Lora', serif;
+    text-align: center;
+    &__image {
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    &__image img {
+        max-width: 100%;
+    }
+    &__image.hovered &__hover {
+        opacity: 1;
+    }
+
+    &__title {
+        color: #222222;
+        font-size: 18px;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+    &__price {
+        font-size: 13px;
+        color: #f72464;
+        font-weight: 600;
+    }
+    &__hover {
+        opacity: 0;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            opacity: 1;
+            transition: all 0.2s ease-in;
+        }
+    }
+    &__button {
+        margin-bottom: 10px;
+        background-color: #f72464;
+        font-size: 1rem;
+        color: #ffffff;
+        padding-top: 10px;
+        width: 100px;
+        line-height: 1;
+        height: 30px;
+        display: inline-block;
+        border-radius: 3px;
+        box-shadow: 0 5px 30px 0 rgba(31, 35, 37, 0.3);
+        text-decoration: none;
+        transition: all 0.2s ease-in;
+        &:hover {
+            background-color: #da0f4d;
+            text-decoration: none;
+            box-shadow: 0 5px 30px 0 rgba(31, 35, 37, 0.4);
+            color: #ffffff;
+        }
+    }
+
+}
+@media screen and (max-width: 760px) {
+    .CardProduct {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-flow: row wrap;
+        &__image {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-flow: row wrap;
+        }
+    }
+}

@@ -1,0 +1,199 @@
+.menu {
+    /*меню хлебные крошки*/
+    &_bread-crumbs {
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        padding-bottom: 50px;
+    }
+
+    &__link {
+
+        &_bread-crumbs {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding: 0 12px;
+
+            &::after {
+                display: block;
+                position: absolute;
+                top: 6px;
+                content: "";
+                width: 4px;
+                height: 7px;
+                background: url(../img/spritesheet.png) no-repeat -10px -10px;
+
+                right: -2px;
+            }
+        }
+    }
+
+    &__item {
+
+        &_bread-crumbs {
+            line-height: 16px;
+
+            &:last-child {
+
+                .menu__link_bread-crumbs {
+                    padding-right: 0;
+
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    &__items {
+        display: flex;
+    }
+
+    &__item {
+        display: inline-block;
+        list-style: none;
+        position: relative;;
+    }
+
+    &__link {
+        position: relative;
+    }
+
+    &_navigation {
+
+        &_js {
+            opacity: 0;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            transform: translateY(-100%);
+            transition: .3s;
+            z-index: -1;
+
+            .menu {
+
+                &__items_navigation {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0 10px;
+                }
+
+                &__item_navigation {
+                    min-width: 100%;
+                }
+
+                &__link_navigation {
+                    padding: 15px;
+                    padding-right: 30px;
+                    text-align: left;
+
+                    &::after {
+                        top: 24px;
+                    }
+                }
+            }
+
+
+
+
+        }
+
+        &_open {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    &__items {
+
+        &_navigation {
+            padding-right: 27px;
+        }
+    }
+
+    &__link {
+
+        &_navigation {
+            display: block;
+            text-decoration: none;
+            color: #34383d;
+            padding: 0 27px 5px;
+            font-size: (16px) + 2;
+            line-height: (16px) + 2;
+
+            &::after {
+                display: block;
+                position: absolute;
+                top: 8px;
+                content: "";
+                width: 7px;
+                height: 4px;
+                background: url(../img/spritesheet.png) no-repeat -10px -10px;
+
+                right: 12px;
+            }
+
+            &_selected {
+                color:#41bedd;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1110px) {
+    .menu {
+
+        &__items_navigation {
+            padding-right: 15px;
+        }
+
+        &__link_navigation {
+            padding-left: 5px;
+        }
+    }
+}
+@media screen and (max-width: 770px) {
+
+    .menu {
+
+        &_navigation {
+            opacity: 0;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            transform: translateY(-100%);
+            transition: .3s;
+            z-index: -1;
+
+
+            &_open {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        &__items_navigation {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 10px;
+        }
+
+
+        &__item_navigation {
+            min-width: 100%;
+        }
+
+        &__link_navigation {
+
+            padding: 15px;
+            padding-right: 30px;
+            text-align: left;
+
+            &::after {
+                top: 24px;
+            }
+        }
+    }
+}
