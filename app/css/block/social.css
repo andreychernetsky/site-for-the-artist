@@ -1,0 +1,21 @@
+.social {
+  font-size: 22px; }
+  .social__link {
+    border-bottom: none; }
+  .social__item {
+    display: inline-block;
+    vertical-align: middle; }
+    .social__item + li {
+      margin-left: 10px; }
+    .social__item__link {
+      display: block; }
+  .social .fa-vk:hover {
+    color: #5078b4; }
+  .social .fa-facebook-f:hover {
+    color: #2d57b4; }
+  .social .fa-twitter:hover {
+    color: #25a6c7; }
+  .social .fa-instagram:hover {
+    color: #c74f7e; }
+  .social .fa-android:hover {
+    color: #23c73b; }
