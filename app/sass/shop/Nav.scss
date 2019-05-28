@@ -1,0 +1,22 @@
+.Nav {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #CCCCCC;
+    background:#fff;
+    box-shadow: 0 0 50px 10px rgba(0,0,0,.5);
+    &-List {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    &-Item {
+        font-size: 1.1rem;
+        line-height: 3rem  ;
+        text-decoration: none;
+        color: gray;
+        &:hover{
+            color: red;
+        }
+    }
+}

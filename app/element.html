@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+				integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<div class="wrapper">
+	<div class="inner">
+		<article class="map">
+			.
+			<div class="map__clouse">
+				<p class="map__x">x</p>
+			</div>
+			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5325.075773203903!2d-4.256240449023915!3d55.864079302799375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888441f8bcc4ed5%3A0xd28f7d5a495eb8a6!2sKEVIN+WAWERU!5e0!3m2!1sru!2sua!4v1523046983715" frameborder="0" style="border:0" allowfullscreen class="map__iframe"></iframe>	 -->
+		</article>
+		<header class="head">
+			
+			<!--фиксированный header-->
+			<div class="top">
+				<div class="top__container">
+					
+					<!--кнопка открытия меню на маленьких экранах-->
+					<div class="menu-open">
+						<div class="menu-open__global  menu-open__global_top"></div>
+						<div class="menu-open__global  menu-open__global_middle"></div>
+						<div class="menu-open__global  menu-open__global_bottom"></div>
+					</div>
+					<!--end кнопка открытия меню на маленьких экранах-->
+					
+					<!--логотип-->
+					<div class="logo">
+						<a href="#" class="logo__link">
+							<img class="logo__img" src="#" alt="logo">
+						</a>
+					</div>
+					<!--end логотип-->
+				</div>
+				
+				<!--меню навигации и поиск-->
+				<div class="top__menu">
+					
+					<!--меню навигации-->
+					<nav class="menu menu_navigation">
+						<ul class="menu__items menu__items_navigation">
+							<li class="menu__item menu__item_navigation">
+								<a href="" class="menu__link menu__link_navigation">Home</a>
+								
+								<ul class="dropdown">
+									<li class="dropdown__item">
+										<a href="" class="dropdown__link">itrem</a>
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="" class="dropdown2__link">item2</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="" class="dropdown2__link">item2</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="" class="dropdown2__link">item2</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown__item">
+										<a href="" class="dropdown__link">item</a>
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="" class="dropdown2__link">item2</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="" class="dropdown2__link">item2</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="" class="dropdown2__link">item2</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="menu__item  menu__item_navigation">
+								<a href="#" class="menu__link  menu__link_navigation">Pages</a>
+								<ul class="dropdown">
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Item</a>
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Item</a>
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Item</a>
+										
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+										</ul>
+									
+									</li>
+								</ul>
+							</li>
+							
+							<li class="menu__item  menu__item_navigation  menu__item_navigation_selected">
+								<a href="#" class="menu__link  menu__link_navigation  menu__link_navigation_selected">Portfolio</a>
+								<!-- первая вложенность -->
+								<ul class="dropdown  dropdown_active">
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Classic</a>
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Sortable grid with text</a>
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown__item  dropdown__item_selected">
+										<a href="#" class="dropdown__link  dropdown__link_selected">Sortable grid without text</a>
+										
+										<!-- вторая вложенность -->
+										<ul class="dropdown2  dropdown2_active">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">2 columns</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">2 columns with right sidebar</a>
+											</li>
+											<li class="dropdown2__item  dropdown2__item_selected">
+												<a href="#" class="dropdown2__link  dropdown2__link_selected">3 columns</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">3 columns with left sidebar</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">4 columns</a>
+											</li>
+										</ul>
+										<!-- END вторая вложенность -->
+									</li>
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Sortable masonry</a>
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Single project pages</a>
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+										</ul>
+									</li>
+								
+								</ul>
+								<!-- END первая вложенность -->
+							</li>
+							<li class="menu__item  menu__item_navigation">
+								<a href="#" class="menu__link  menu__link_navigation">Blog</a>
+								<ul class="dropdown">
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Item</a>
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Item</a>
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Item</a>
+										
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+										</ul>
+									
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item  menu__item_navigation">
+								<a href="#" class="menu__link  menu__link_navigation">Features</a>
+								<ul class="dropdown">
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Item</a>
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Item</a>
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Item</a>
+										
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+										</ul>
+									
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item  menu__item_navigation">
+								<a href="#" class="menu__link  menu__link_navigation">Shortcodes</a>
+								<ul class="dropdown">
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Item</a>
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Item</a>
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Item</a>
+										
+										<ul class="dropdown2">
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+											<li class="dropdown2__item">
+												<a href="#" class="dropdown2__link">Item</a>
+											</li>
+										</ul>
+									
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="inner view-port">
+	<button class="accordion">section1</button>
+	<div class="accordion__panel">
+	<p class="panel__text">Рисовать я начала с самого детства. В пятом классе я узнала ,что у нас есть
+	художественная школа в городе. Я сама пошла записываться в директору. Мама была удивлена, когда позвонили
+	и
+	сказали, что ваша девочка хочет заниматься..Мама согласилась. Весь вечер я рисовала картинки,чтобы
+	показать
+	на просмотре. Потом я сдала вступительный экзамен по рисунку…. Меня приняли.. В художественной школе мы
+	рисовали постановки натюрмортов, составляли тематические композиции, ходили на пленэры.</p>
+	</div>
+	<button class="accordion"></button>
+	<div class="accordion__panel">
+	<p class="panel__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda commodi eligendi incidunt, iste iure laboriosam provident quae quidem sed velit, voluptates. Blanditiis labore magnam molestiae, officiis veniam vitae voluptate?</p>
+	</div>
+	
+	<button class="accordion"></button>
+	<div class="accordion__panel">
+	<p class="panel__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda commodi eligendi incidunt, iste iure laboriosam provident quae quidem sed velit, voluptates. Blanditiis labore magnam molestiae, officiis veniam vitae voluptate?</p>
+	</div>
+	</div>
+	
+	<div class="inner view-port">
+		<div class="col-md-3">
+			<div class="CardProduct">
+				<div class="CardProduct__image hovered">
+					<img src="img/art/art.jpg" alt="">
+					<div class="CardProduct__hover">
+						<a href="#" class="CardProduct__button">Заказать товар</a>
+						<!--<a href="#" class="CardProduct__button"></a>-->
+					</div>
+				</div>
+				<div class="CardProduct__title">Название товара</div>
+				<div class="CardProduct__price">
+					<span>100$</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="CardProduct">
+				<div class="CardProduct__image">
+					<img src="img/art/art.jpg" alt="">
+					<div class="CardProduct__hover">
+						<a href="#" class="CardProduct__button">Заказать товар</a>
+						<!--<a href="#" class="CardProduct__button"></a>-->
+					</div>
+				</div>
+				<div class="CardProduct__title">Название товара</div>
+				<div class="CardProduct__price">
+					<span>100$</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="CardProduct">
+				<div class="CardProduct__image">
+					<img src="img/art/art.jpg" alt="">
+					<div class="CardProduct__hover">
+						<a href="#" class="CardProduct__button">Заказать товар</a>
+						<!--<a href="#" class="CardProduct__button"></a>-->
+					</div>
+				</div>
+				<div class="CardProduct__title">Название товара</div>
+				<div class="CardProduct__price">
+					<span>100$</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="CardProduct">
+				<div class="CardProduct__image ">
+					<img src="img/art/art.jpg" alt="">
+					<div class="CardProduct__hover">
+						<a href="#" class="CardProduct__button">Заказать товар</a>
+						<!--<a href="#" class="CardProduct__button"></a>-->
+					</div>
+				</div>
+				<div class="CardProduct__title">Название товара</div>
+				<div class="CardProduct__price">
+					<span>100$</span>
+				</div>
+			</div>
+		</div>
+	
+	
+	</div>
+	
+	<div class="inner">
+		<a href="" class="button-outline">еще</a>
+	</div>
+	<div class="inner view-port">
+		<div class="content-left">
+			
+			<div class="card">
+				<div class="card__header">
+					<div class="card__title">
+						<i class="fas fa-image"></i>
+						Визитка
+					</div>
+					<div class="card__button">
+						<i class="fas fa-angle-down"></i>
+						<i class="fas fa-angle-up"></i>
+					</div>
+				</div>
+				<div class="card__body clearfix">
+					<img src="img/art/art.jpg" alt="about" class="card__img" width="350" height="100%">
+					<div class="card__text">
+						<p class="card__description">Рисовать я начала с самого детства. В пятом классе я узнала ,что у нас есть
+						</p>
+						<a href="" class="card__link">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__header">
+					<div class="card__title">
+						<i class="fas fa-image"></i>
+						Визитка
+					</div>
+					<div class="card__button">
+						<i class="fas fa-angle-down"></i>
+						<i class="fas fa-angle-up"></i>
+					</div>
+				</div>
+				<div class="card__body clearfix">
+					<img src="img/art/art.jpg" alt="about" class="card__img" width="350" height="100%">
+					<div class="card__text">
+						<p class="card__description">Рисовать я начала с самого детства. В пятом классе я узнала ,что у нас есть
+							художественная школа в городе. Я сама пошла записываться в директору. Мама была удивлена, когда позвонили
+							и
+							сказали, что ваша девочка хочет заниматься..Мама согласилась. Весь вечер я рисовала картинки,чтобы
+							показать
+							на просмотре. Потом я сдала вступительный экзамен по рисунку…. Меня приняли.. В художественной школе мы
+							рисовали постановки натюрмортов, составляли тематические композиции, ходили на пленэры.</p>
+						<a href="" class="card__link">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__header">
+					<div class="card__title">
+						<i class="fas fa-image"></i>
+						Визитка
+					</div>
+					<div class="card__button">
+						<i class="fas fa-angle-down"></i>
+						<i class="fas fa-angle-up"></i>
+					</div>
+				</div>
+				<div class="card__body clearfix">
+					<img src="img/art/art.jpg" alt="about" class="card__img" width="350" height="100%">
+					<div class="card__text">
+						<p class="card__description">Рисовать я начала с самого детства. В пятом классе я узнала ,что у нас есть
+							художественная школа в городе. Я сама пошла записываться в директору. Мама была удивлена, когда позвонили
+							и
+							сказали, что ваша девочка хочет заниматься..Мама согласилась. Весь вечер я рисовала картинки,чтобы
+							показать
+							на просмотре. Потом я сдала вступительный экзамен по рисунку…. Меня приняли.. В художественной школе мы
+							рисовали постановки натюрмортов, составляли тематические композиции, ходили на пленэры.</p>
+						<a href="" class="card__link">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="content-right">
+			<div class="row">
+				<ul class="social">
+					<li class="social__item">
+						<a href="#" target="_blank" class="fab fa-vk"></a>
+					</li>
+					<li class="social__item">
+						<a href="#" target="_blank" class="fab fa-facebook-f"></a>
+					</li>
+					<li class="social__item">
+						<a href="#" target="_blank" class="fab fa-twitter"></a>
+					</li>
+					<li class="social__item">
+						<a href="#" target="_blank" class="fab fa-instagram"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="row"></div>
+			<div class="row"></div>
+		</div>
+	</div>
+	<div class="inner view-port">
+		<div class="about" id="about">
+			<div class="about__left ">
+				<h3 class="left__title">Открытие моей персональной выставки.!!!!!!</h3>
+				<p class="left__text">Приглашаю на персональную выставку "Весеннее настроение". В городе Бобруйске "Дворец
+					искусств". Вход бесплатный (служебный вход). Предупредите, что на выставку. </p>
+				<ul class="about__list">
+					<li class="list__item">
+						<a href="#" class="list__link">любые ссылки на другой контент</a>
+					</li>
+					<li class="list__item">
+						<a href="#" class="list__link">любые ссылки на другой контент</a>
+					</li>
+					<li class="list__item">
+						<a href="#" class="list__link">любые ссылки на другой контент</a>
+					</li>
+				</ul>
+			</div>
+			<div class="about__right">
+				<iframe class="video" width="100%" height="250" src="https://www.youtube.com/embed/_NF0xJON38Q" frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+	</body></div>
+</html>

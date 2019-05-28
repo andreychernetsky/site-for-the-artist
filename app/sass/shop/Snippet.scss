@@ -1,0 +1,47 @@
+.Snippet {
+    width: 200px;
+    margin-bottom: 17px;
+    padding: 17px;
+    text-align: center;
+    cursor: pointer;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .28);
+    &-Headline {
+        position: relative;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+        color: #404040;
+        &:after {
+            position: absolute;
+            bottom: 5px;
+            left: 17px;
+            width: calc(100% - 34px);
+            content: "";
+            border-bottom: 1px solid #f0f0f0;
+        }
+    }
+    &-Category {
+        display: block;
+        font-size: 0.9rem;
+        line-height: 0.8rem;
+        text-decoration: none;
+        color: #7f7f7f;
+        &:hover {
+            color: red;
+        }
+    }
+    &-Title {
+        display: block;
+        overflow: hidden;
+        max-width: 80%;
+        margin: 0 auto;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        white-space: nowrap;
+        text-after-overflow: ellipsis;
+
+        &:hover &-Title {
+            color: red;
+        }
+    }
+}
