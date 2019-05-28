@@ -1,0 +1,20 @@
+.SmallSnippet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 242px;
+    height: 115px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #666699;
+    background: #fff;
+    &-Cell{
+        padding-left: 12px;
+    }
+    &-Price {
+        display: block;
+        font-weight:bolder;
+        color: #000000;
+    }
+    
+}

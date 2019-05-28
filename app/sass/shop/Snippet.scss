@@ -20,6 +20,9 @@
             border-bottom: 1px solid #f0f0f0;
         }
     }
+    &-Image {
+       margin-bottom: 17px;
+    }
     &-Category {
         display: block;
         font-size: 0.9rem;
@@ -39,9 +42,25 @@
         line-height: 1.4rem;
         white-space: nowrap;
         text-after-overflow: ellipsis;
-
-        &:hover &-Title {
-            color: red;
+         text-decoration: none;
+    }
+    &:hover &-Title {
+        color: red;
+    }
+    &-Price {
+        position: relative;
+        margin-bottom: 17px;
+        padding-bottom: 17px;
+        font-size: 15px;
+        font-weight:bold;
+        line-height: 17px;
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 17px;
+            width:calc(100% - 34px);
+            content:"";
+            border-top:1px solid #f0f0f0;
         }
     }
 }

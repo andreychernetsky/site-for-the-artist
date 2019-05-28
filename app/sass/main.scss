@@ -23,6 +23,9 @@
 @import "shop/Nav";
 @import "shop/Heading";
 @import "shop/Snippet";
+@import "shop/More";
+@import "shop/SmallSnippet";
+@import "shop/Footer";
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:400,700&amp;subset=cyrillic" rel="stylesheet');
 * {
@@ -125,7 +128,7 @@ html {
     background-color: #f6f5f3;
 }
 .Container {
-    width: 1000px;
+    width: 1280px;
     margin: 0 auto;
 }
 .Main {
@@ -137,6 +140,16 @@ html {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+    .Subscribe {
+        margin-bottom: 14px;
+        padding: 14px 0;
+        line-height: 34px;
+        background: #e4eeff;
+    }
+    .History-List {
+        display: flex;
+        justify-content: space-between;
     }
 }
 

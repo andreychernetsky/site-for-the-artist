@@ -1,0 +1,17 @@
+.Footer {
+  margin-top: 50px;
+  padding: 12px 0;
+  font-size: 0.9rem;
+  border-top: 1px solid #ccc; }
+  .Footer-Inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .Footer-Item {
+    text-decoration: none;
+    color: #8792a8; }

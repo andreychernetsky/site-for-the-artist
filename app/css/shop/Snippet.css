@@ -20,6 +20,8 @@
       width: calc(100% - 34px);
       content: "";
       border-bottom: 1px solid #f0f0f0; }
+  .Snippet-Image {
+    margin-bottom: 17px; }
   .Snippet-Category {
     display: block;
     font-size: 0.9rem;
@@ -36,6 +38,22 @@
     font-size: 1rem;
     line-height: 1.4rem;
     white-space: nowrap;
-    text-after-overflow: ellipsis; }
-    .Snippet-Title:hover .Snippet-Title-Title {
-      color: red; }
+    text-after-overflow: ellipsis;
+    text-decoration: none; }
+  .Snippet:hover .Snippet-Title {
+    color: red; }
+  .Snippet-Price {
+    position: relative;
+    margin-bottom: 17px;
+    padding-bottom: 17px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 17px; }
+    .Snippet-Price:before {
+      position: absolute;
+      top: 0;
+      left: 17px;
+      width: -webkit-calc(100% - 34px);
+      width: calc(100% - 34px);
+      content: "";
+      border-top: 1px solid #f0f0f0; }
