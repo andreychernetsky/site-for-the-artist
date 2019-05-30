@@ -4,17 +4,18 @@
 @import "block/about";
 @import "block/social";
 @import "block/map";
-@import "block/top";
+//@import "block/top";
 @import "block/CardProduct";
 @import "block/button-outline";
 @import "block/accordeon";
-@import "block/head";
-@import "block/menu-open";
-@import "block/logo";
-@import "block/menu";
-@import "block/search";
-@import "block/dropdown";
-@import "block/dropdown2";
+//@import "block/header";
+//@import "block/menu-open";
+//@import "block/logo";
+//@import "block/menu";
+//@import "block/search";
+//@import "block/dropdown";
+//@import "block/dropdown2";
+
 //оформление магазина
 @import "shop/Header";
 @import "shop/Logo";
@@ -26,6 +27,12 @@
 @import "shop/More";
 @import "shop/SmallSnippet";
 @import "shop/Footer";
+//@import "block/top";
+@import "block/menu-open";
+@import "block/menu";
+@import "block/dropdown";
+@import "block/dropdown2";
+@import "block/search";
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:400,700&amp;subset=cyrillic" rel="stylesheet');
 * {
@@ -123,10 +130,18 @@ html {
 
 //оформление магазина
 .Page {
-    max-width: 1280px;
-    margin: 0;
     font-family:Arial;
     background-color: #f6f5f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Wrap {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .Container {
     width: 1280px;

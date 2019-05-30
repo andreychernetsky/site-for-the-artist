@@ -1,4 +1,4 @@
-.head {
+.header {
     margin-bottom: 10%;
     background: linear-gradient(to left, #35eef6, #7c28b1);
     color: #ffffff;
@@ -14,7 +14,7 @@
 
 }
 @media screen and (max-width: 1110px) {
-    .head {
+    .header {
 
         &__h1 {
             padding-top: 147px;
@@ -24,13 +24,13 @@
 }
 @media screen and (max-width: 770px) {
 
-    .head__h1 {
+    .header__h1 {
         padding-top: 67px;
         font-size: 40px;
     }
 }
 @media screen and (max-height: 414px) {
-    .head {
+    .header {
 
         padding-bottom: 0;
         &__h1 {
