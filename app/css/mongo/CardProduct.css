@@ -63,6 +63,7 @@
       -o-transition: all 0.2s ease-in;
       transition: all 0.2s ease-in; }
   .CardProduct__button {
+    text-align: center;
     margin-bottom: 10px;
     background-color: #f72464;
     font-size: 1rem;

@@ -26,6 +26,8 @@
 @import "mongo/Nav";
 @import "mongo/Btn";
 @import "mongo/Section";
+@import "mongo/Services";
+@import "mongo/CardProduct";
  .Page{
   margin: 0;
   font-family:'Montserrat',sans-serif;
@@ -45,3 +47,11 @@
  min-width:1200px;
  margin:0 auto;
 }
+.Row {
+ width: 100%;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-flow: row wrap;
+}
+
