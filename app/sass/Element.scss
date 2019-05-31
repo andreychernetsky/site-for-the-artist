@@ -1,0 +1,157 @@
+@import "partials/params";
+@import "partials/mixins";
+@import "block/card";
+@import "block/about";
+@import "block/social";
+@import "block/map";
+//@import "block/top";
+@import "block/CardProduct";
+@import "block/button-outline";
+@import "block/accordeon";
+//@import "block/header";
+//@import "block/menu-open";
+//@import "block/logo";
+//@import "block/menu";
+//@import "block/search";
+//@import "block/dropdown";
+//@import "block/dropdown2";
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:400,700&amp;subset=cyrillic" rel="stylesheet');
+* {
+   box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: #eee;
+}
+
+html {
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.inner {
+    top: 10%;
+    @include space;
+    margin: 0 auto;
+    //@include line;
+}
+.content-left {
+    width: 50%;
+}
+.content-right {
+    width: 50%;
+    //@include line;
+}
+.view-port {
+    width: $view-port;
+}
+.video {
+    margin: 50px auto;
+    border-radius: 10px;
+    display: block;
+}
+
+@media screen and (max-width: 760px)  {
+    .inner {
+        top: 5%;
+        width: 100%;
+        @include space;
+        flex-flow: row wrap;
+    }
+    .content-right{
+       /* width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-flow: row wrap;*/
+        width: 100%;
+        border: 1px solid black;
+    }
+    .content-left {
+        width: 100%;
+
+    }
+    .row {
+        width: 100%;
+        height: 30%;
+        //border: 1px solid black;
+
+    }
+    .col-md-3 { display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+
+}
+
+.up {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 20;
+    cursor: pointer;
+    font-size: 30px;
+    color: #bdc3c7;
+    text-align: center;
+    line-height: 35px;
+}
+
+//оформление магазина
+.Page {
+    font-family:Arial;
+    background-color: #f6f5f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Wrap {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.Container {
+    width: 1280px;
+    margin: 0 auto;
+}
+.Main {
+    background: #f8f8f8;
+    &-Inner {
+        padding: 30px 0 10px;
+    }
+    .Goods {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .Subscribe {
+        margin-bottom: 14px;
+        padding: 14px 0;
+        line-height: 34px;
+        background: #e4eeff;
+    }
+    .History-List {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+

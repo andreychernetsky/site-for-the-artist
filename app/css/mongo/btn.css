@@ -1,0 +1,18 @@
+.Btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 30px;
+  border: 3px solid #fff;
+  -webkit-transform: 1rem;
+  -ms-transform: 1rem;
+  transform: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: background .1s linear, color .1s linear;
+  -o-transition: background .1s linear, color .1s linear;
+  transition: background .1s linear, color .1s linear; }
+  .Btn:hover {
+    background: #fff;
+    color: #333333; }

@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="../node_modules/bootstrap/scss/bootstrap.scss">
+	<title>Document</title>
+</head>
+<body class="Page">
+<div class="Wrap">
+	<header class="Header">
+		<div class="Header-Inner Container">
+			<!--фиксированный header-->
+			<div class="top">
+				<div class="top__container">
+					<!--кнопка открытия меню на маленьких экранах-->
+					<div class="menu-open">
+						<div class="menu-open__global  menu-open__global_top"></div>
+						<div class="menu-open__global  menu-open__global_middle"></div>
+						<div class="menu-open__global  menu-open__global_bottom"></div>
+					</div>
+					<!--end кнопка открытия меню на маленьких экранах-->
+				</div>
+			</div>
+			<div class="Logo">
+				<a href="element.html" class="Logo__link">
+					logo
+					<img src="" alt="">
+					<span class="Logo-Icon"></span>
+				</a>
+			</div>
+			
+			
+			<form action="/" class="Search">
+				<input class="Input" type="Search">
+				<input class="Button Search-Button" type="submit" value="Найти">
+			</form>
+			
+			<div class="User">
+				<!--<img src="img/art/art.jpg" alt="logo">-->
+			</div>
+		</div>
+		<div class="top__menu">
+			
+			<!--меню навигации-->
+			<nav class="menu menu_navigation">
+				<ul class="menu__items menu__items_navigation">
+					<li class="menu__item menu__item_navigation">
+						<a href="" class="menu__link menu__link_navigation">Home</a>
+						
+						<ul class="dropdown">
+							<li class="dropdown__item">
+								<a href="" class="dropdown__link">itrem</a>
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="" class="dropdown2__link">item2</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="" class="dropdown2__link">item2</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="" class="dropdown2__link">item2</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown__item">
+								<a href="" class="dropdown__link">item</a>
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="" class="dropdown2__link">item2</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="" class="dropdown2__link">item2</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="" class="dropdown2__link">item2</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="menu__item  menu__item_navigation">
+						<a href="#" class="menu__link  menu__link_navigation">Pages</a>
+						<ul class="dropdown">
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link">Item</a>
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link">Item</a>
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link">Item</a>
+								
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+								</ul>
+							
+							</li>
+						</ul>
+					</li>
+					
+					<li class="menu__item  menu__item_navigation  menu__item_navigation_selected">
+						<a href="#" class="menu__link  menu__link_navigation  menu__link_navigation_selected">Portfolio</a>
+						<!-- первая вложенность -->
+						<ul class="dropdown  dropdown_active">
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link">Classic</a>
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link">Sortable grid with text</a>
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown__item  dropdown__item_selected">
+								<a href="#" class="dropdown__link  dropdown__link_selected">Sortable grid without text</a>
+								
+								<!-- вторая вложенность -->
+								<ul class="dropdown2  dropdown2_active">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">2 columns</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">2 columns with right sidebar</a>
+									</li>
+									<li class="dropdown2__item  dropdown2__item_selected">
+										<a href="#" class="dropdown2__link  dropdown2__link_selected">3 columns</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">3 columns with left sidebar</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">4 columns</a>
+									</li>
+								</ul>
+								<!-- END вторая вложенность -->
+							</li>
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link">Sortable masonry</a>
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link">Single project pages</a>
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+								</ul>
+							</li>
+						
+						</ul>
+						<!-- END первая вложенность -->
+					</li>
+					<li class="menu__item  menu__item_navigation">
+						<a href="#" class="menu__link  menu__link_navigation">Blog</a>
+						<ul class="dropdown">
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link">Item</a>
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link">Item</a>
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link">Item</a>
+								
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+								</ul>
+							
+							</li>
+						</ul>
+					</li>
+					<li class="menu__item  menu__item_navigation">
+						<a href="#" class="menu__link  menu__link_navigation">Features</a>
+						<ul class="dropdown">
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link">Item</a>
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link">Item</a>
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link">Item</a>
+								
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+								</ul>
+							
+							</li>
+						</ul>
+					</li>
+					<li class="menu__item  menu__item_navigation">
+						<a href="#" class="menu__link  menu__link_navigation">Shortcodes</a>
+						<ul class="dropdown">
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link">Item</a>
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link">Item</a>
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown__item">
+								<a href="#" class="dropdown__link">Item</a>
+								
+								<ul class="dropdown2">
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+									<li class="dropdown2__item">
+										<a href="#" class="dropdown2__link">Item</a>
+									</li>
+								</ul>
+							
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+</header>
+
+
+<div class="Body">
+	<div class="Promo Container">
+		<!--<a href="#prom1" class="Promo-Item">-->
+		<!--<img class="Promo-itemImage" src="img/art/art.jpg" alt="tovar">-->
+		<!--</a>-->
+		<a href="#prom2" class="Promo-Item">
+			<img class="Promo-itemImage" src="img/art/art.jpg" alt="tovar">
+		</a>
+		<a href="#prom3" class="Promo-Item">
+			<img class="Promo-itemImage" src="img/art/art.jpg" alt="tovar">
+		</a>
+		<a href="#prom4" class="Promo-Item">
+			<img class="Promo-itemImage" src="img/art/art.jpg" alt="tovar">
+		</a>
+	</div>
+	
+	<main class="Main">
+		<div class="Main-Inner Container">
+			<h2 class="Heading">Приглядись к тим предложениям</h2>
+			
+			<div class="Goods">
+				<div class="Snippet">
+					<div class="Snippet-Headline">Рекомендуем</div>
+					<!--<img class="Snippet-Image" src="img/art/art.jpg" alt="t">-->
+					<a href="#" class="Snippet-Category">Ссылка на товар</a>
+					<a href="#" class="Snippet-Title">Название товара</a>
+					<div class="Snippet-Price">цена от..</div>
+				</div>
+				<div class="Snippet">
+					<div class="Snippet-Headline">Рекомендуем</div>
+					<!--<img class="Snippet-Image" src="img/art/art.jpg" alt="t">-->
+					<a href="#" class="Snippet-Category">Ссылка на товар</a>
+					<a href="#" class="Snippet-Title">Название товара</a>
+					<div class="Snippet-Price">цена от..</div>
+				</div>
+				<div class="Snippet">
+					<div class="Snippet-Headline">Рекомендуем</div>
+					<!--<img class="Snippet-Image" src="img/art/art.jpg" alt="t">-->
+					<a href="#" class="Snippet-Category">Ссылка на товар</a>
+					<a href="#" class="Snippet-Title">Название товара</a>
+					<div class="Snippet-Price">цена от..</div>
+				</div>
+				<div class="Snippet">
+					<div class="Snippet-Headline">Рекомендуем</div>
+					<!--<img class="Snippet-Image" src="img/art/art.jpg" alt="t">-->
+					<a href="#" class="Snippet-Category">Ссылка на товар</a>
+					<a href="#" class="Snippet-Title">Название товара</a>
+					<div class="Snippet-Price">цена от..</div>
+				</div>
+				<div class="Snippet">
+					<div class="Snippet-Headline">Рекомендуем</div>
+					<!--<img class="Snippet-Image" src="img/art/art.jpg" alt="t">-->
+					<a href="#" class="Snippet-Category">Ссылка на товар</a>
+					<a href="#" class="Snippet-Title">Название товара</a>
+					<div class="Snippet-Price">цена от..</div>
+				</div>
+				<button class="More">Показать еще</button>
+			</div>
+		</div>
+	</main>
+	
+	<div class="Subscribe">
+		<div class="Container">
+			узнайте о выгодных предложениях и получите личные рекомендации
+		</div>
+	</div>
+	
+	<div class="History Container">
+		<h2 class="Heading">Вы смотрели</h2>
+		<div class="History-List">
+			<a href="#" class="SmallSnippet">
+				<span class="SmallSnippet-Cell">
+					<img src="img/art/art.jpg" alt="" class="SmallSnippet-image">
+				</span>
+				<span class="SmallSnippet-Cell">
+					<span class="SmallSnippet-Title">
+						Описание товара
+					</span>
+					<span class="SmallSnippet-Price">Цена товара</span>
+				</span>
+			</a>
+			<a href="#" class="SmallSnippet">
+				<span class="SmallSnippet-Cell">
+					<img src="img/art/art.jpg" alt="" class="SmallSnippet-image">
+				</span>
+				<span class="SmallSnippet-Cell">
+					<span class="SmallSnippet-Title">
+						Описание товара
+					</span>
+					<span class="SmallSnippet-Price">Цена товара</span>
+				</span>
+			</a>
+			<a href="#" class="SmallSnippet">
+				<span class="SmallSnippet-Cell">
+					<img src="img/art/art.jpg" alt="" class="SmallSnippet-image">
+				</span>
+				<span class="SmallSnippet-Cell">
+					<span class="SmallSnippet-Title">
+						Описание товара
+					</span>
+					<span class="SmallSnippet-Price">Цена товара</span>
+				</span>
+			</a>
+			<a href="#" class="SmallSnippet">
+				<span class="SmallSnippet-Cell">
+					<img src="img/art/art.jpg" alt="" class="SmallSnippet-image">
+				</span>
+				<span class="SmallSnippet-Cell">
+					<span class="SmallSnippet-Title">
+						Описание товара
+					</span>
+					<span class="SmallSnippet-Price">Цена товара</span>
+				</span>
+			</a>
+		</div>
+	</div>
+</div>
+</div>
+
+<footer class="Footer">
+	<div class="Footer-Inner Container">
+		<a href="#" class="Link Footer-Item">Мобильная версия</a>
+		<a href="#" class="Link Footer-Item">Мобильная версия</a>
+		<a href="#" class="Link Footer-Item">Мобильная версия</a>
+	</div>
+</footer>
+</body>
+</html>
