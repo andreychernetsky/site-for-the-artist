@@ -2,7 +2,7 @@
 @import "partials/mixins";
 //оформление магазина
 
-/*@import "shop/Header";
+@import "shop/Header";
 @import "shop/Logo";
 @import "shop/Input";
 @import "shop/Button";
@@ -11,10 +11,10 @@
 @import "shop/Snippet";
 @import "shop/More";
 @import "shop/SmallSnippet";
-@import "shop/Footer";*/
+@import "shop/Footer";
 
 //@import "block/top";
-@import "block/menu-open";
+/*@import "block/menu-open";
 @import "block/menu";
 @import "block/dropdown";
 @import "block/dropdown2";
@@ -23,7 +23,7 @@
 @import "mongo/Intro";
 @import "mongo/Nav";
 @import "mongo/Btn";
-@import "mongo/Section";
+@import "mongo/Section";*/
  .Page{
   margin: 0;
   font-family:'Montserrat',sans-serif;
