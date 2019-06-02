@@ -20,7 +20,7 @@
     &__title {
 
         color: #222222;
-        font-size: 18px;
+        font-size: 1.8rem;
         margin-bottom: 5px;
         font-weight: 600;
     }
@@ -50,20 +50,20 @@
     &__button {
         text-align: center;
         margin-bottom: 10px;
-        background-color: #f72464;
-        font-size: 1rem;
+        //background-color: #f72464;
+        font-size: 1.3rem;
         color: #ffffff;
         padding-top: 10px;
         width: 100px;
-        line-height: 1;
-        height: 30px;
+        //line-height: 1;
+        height: auto;
         display: inline-block;
         border-radius: 3px;
         box-shadow: 0 5px 30px 0 rgba(31, 35, 37, 0.3);
         text-decoration: none;
         transition: all 0.2s ease-in;
         &:hover {
-            background-color: #da0f4d;
+            //background-color: #da0f4d;
             text-decoration: none;
             box-shadow: 0 5px 30px 0 rgba(31, 35, 37, 0.4);
             color: #ffffff;

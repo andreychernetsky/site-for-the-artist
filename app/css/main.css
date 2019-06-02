@@ -9034,7 +9034,7 @@ a.text-dark:hover, a.text-dark:focus {
     opacity: 1; }
   .CardProduct__title {
     color: #222222;
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 5px;
     font-weight: 600; }
   .CardProduct__price {
@@ -9075,13 +9075,11 @@ a.text-dark:hover, a.text-dark:focus {
   .CardProduct__button {
     text-align: center;
     margin-bottom: 10px;
-    background-color: #f72464;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #ffffff;
     padding-top: 10px;
     width: 100px;
-    line-height: 1;
-    height: 30px;
+    height: auto;
     display: inline-block;
     -webkit-border-radius: 3px;
             border-radius: 3px;
@@ -9092,7 +9090,6 @@ a.text-dark:hover, a.text-dark:focus {
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in; }
     .CardProduct__button:hover {
-      background-color: #da0f4d;
       text-decoration: none;
       -webkit-box-shadow: 0 5px 30px 0 rgba(31, 35, 37, 0.4);
               box-shadow: 0 5px 30px 0 rgba(31, 35, 37, 0.4);
