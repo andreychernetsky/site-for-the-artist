@@ -30,6 +30,7 @@
 @import "mongo/pagination";
 @import "mongo/Devices";
 @import "mongo/Cards-item";
+@import "mongo/Accordion";
 
 .Page {
     margin: 0;
@@ -67,6 +68,23 @@
     flex-flow: row wrap;
     padding: 0 20px;
 }
+.Blog-wrap {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__left{
+        width: 40%;
+    }
+    &__right {
+        width: 55%;
+    }
+
+}
+.Card-row {
+    margin-bottom: 30px;
+}
+
 
 @media (max-width: 770px) {
     /* Section */

@@ -1,5 +1,12 @@
 .Section {
+  width: 100%;
   padding: 80px 0; }
+  .Section--devices {
+    margin-bottom: 40px;
+    padding-bottom: 0;
+    background: url("../../img/devices-bg.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover; }
   .Section__header {
     width: 100%;
     max-width: 950px;
