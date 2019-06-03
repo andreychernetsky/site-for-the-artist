@@ -248,17 +248,6 @@
 	</div>
 </section>
 
-<section class="Section Section--devices">
-	<div class="Container">
-		<div class="Section__header">
-			<h3 class="Section__suptitle">Новый заголовок</h3>
-			<h2 class="Section__title">Позаголовок</h2>
-		</div>
-		<div class="Devices">
-			<img src="img/works/1.jpg" alt="" class="Devices__item">
-		</div>
-	</div>
-</section>
 
 <section class="Section">
 	<div class="Container">
@@ -268,18 +257,18 @@
 		</div>
 	</div>
 	
-	<div class="header-basket">
-		<p class="basket-toggle">
-			<svg width="24" height="24" viewBox="0 0 24 24">
-				<path
-					d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"></path>
-			</svg>
-			<span class="basket-toggle__counter">( 1 ) </span>
-			<span>basket</span>
-		</p>
-	</div>
+	<!--&lt;!&ndash;	<div class="header-basket">-->
+	<!--<p class="basket-toggle">-->
+	<!--<svg width="24" height="24" viewBox="0 0 24 24">-->
+	<!--<path-->
+	<!--d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"></path>-->
+	<!--</svg>-->
+	<!--<span class="basket-toggle__counter">( 1 ) </span>-->
+	<!--<span>basket</span>-->
+	<!--</p>-->
+	<!--</div>&ndash;&gt;-->
 	
-	<div class="basket-component" id="bsk">
+	<!--<div class="basket-component" id="bsk">
 		<div class="basket-component__wrapper">
 			<h2 class="basket-component__empty" v-if="emptyArray">No current items</h2>
 			<div class="basket-component__item" v-for="item in items" :key="item.id">
@@ -302,19 +291,19 @@
 	</div>
 	
 	<div class="basket-component__total-block">
-		<h3 class="basket-component__title basket-component__title--intotal">Total:</h3>
-		<p class="basket-component__descr basket-component__descr--intotal">Weight:
+		<h3 class="basket-component__title basket-component__title&#45;&#45;intotal">Total:</h3>
+		<p class="basket-component__descr basket-component__descr&#45;&#45;intotal">Weight:
 			<span class="basket-component__weight basket-component__wight-intottal">{{Math.floot()}}</span>
 		</p>
 		
-		<p class="basket-component__descr basket-component__descr--intotal">Price:
+		<p class="basket-component__descr basket-component__descr&#45;&#45;intotal">Price:
 			<span class="basket-component__price basket-component__price-intotal">{{ Math.floor(getTotalValues.p * 100) / 100 }}</span>
 		</p>
 		<button class="basket-component__continue-btn" @click="toggleSendWindow" :disabled='!items.length'>Continue</button>
 	</div>
-	<div :class="{'basket-component__send-layout': true, 'basket-component__send-layout--isActive': sendWindow }">
+	<div :class="{'basket-component__send-layout': true, 'basket-component__send-layout&#45;&#45;isActive': sendWindow }">
 		<button class="basket-component__close-btn" @click="toggleSendWindow">x</button>
-		<p :class="{'basket-component__banner': true, 'basket-component__banner--isActive': bannerStatus }"><span>{{ bannerContent }}</span>
+		<p :class="{'basket-component__banner': true, 'basket-component__banner&#45;&#45;isActive': bannerStatus }"><span>{{ bannerContent }}</span>
 		</p>
 		<form class="basket-component__form">
 			<label class="basket-component__label">
@@ -332,25 +321,144 @@
 			<button class="basket-component__send" @click.prevent="sendOrder">confirm</button>
 		</form>
 	</div>
+	-->
 	
-	<div class="container">
-		<div class="col">
-			<acticle class="card-item shadow_lg">
-				<div class="card-item__img-wrapper">
-					<h3 class="card-item__title h-reset h-posotopn-t">Some title</h3>
-					<img class="card-item__img" src="img/works/2.jpg" alt="card-img">
-				</div>
-				<div class="card-item__content">
-					<p class="card-item__text-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at consequuntur distinctio fugit, illo laudantium officiis rerum sunt vel voluptates?</p>
-				</div>
-				<div class="card-item__divider"></div>
-				<div class="card-item__footer">
-					<a href="" class="card-item__link">подробнее</a>
-					<button class="card-item__add-button" data-item-id="1226" data-item-img="img/works/3.jpg" data-item-name="Some title" data-item-weight="12.00" data-item-price="12.56">add</button>
-				</div>
-			</acticle>
+	<div class="Cards-row">
+		<acticle class="Cards-item shadow_lg">
+			<div class="Cards-item__img-wrapper">
+				<h3 class="Cards-item__title h-reset h-posotopn-t">Название товара</h3>
+				<img class="Cards-item__img" src="img/works/2.jpg" alt="card-img">
+			</div>
+			<div class="Cards-item__content">
+				<p class="Cards-item__text-item">Описание товара</p>
+			</div>
+			<div class="Cards-item__price">
+				<span>100$</span>
+			</div>
+			<div class="Cards-item__divider"></div>
+			<div class="Cards-item__footer">
+				<a href="" class="Cards-item__link">подробнее</a>
+				<button class="Cards-item__add-button" data-item-id="1226" data-item-img="img/works/3.jpg"
+								data-item-name="Some title" data-item-weight="12.00" data-item-price="12.56">add
+				</button>
+			</div>
+		</acticle>
+		<acticle class="Cards-item shadow_lg">
+			<div class="Cards-item__img-wrapper">
+				<h3 class="Cards-item__title h-reset h-posotopn-t">Some title</h3>
+				<img class="Cards-item__img" src="img/works/2.jpg" alt="card-img">
+			</div>
+			<div class="Cards-item__content">
+				<p class="Cards-item__text-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at
+					consequuntur distinctio fugit, illo laudantium officiis rerum sunt vel voluptates?</p>
+			</div>
+			<div class="Cards-item__price">
+				<span>100$</span>
+			</div>
+			<div class="Cards-item__divider"></div>
+			<div class="Cards-item__footer">
+				<a href="" class="Cards-item__link">подробнее</a>
+				<button class="Cards-item__add-button" data-item-id="1226" data-item-img="img/works/3.jpg"
+								data-item-name="Some title" data-item-weight="12.00" data-item-price="12.56">add
+				</button>
+			</div>
+		</acticle>
+		<acticle class="Cards-item shadow_lg">
+			<div class="Cards-item__img-wrapper">
+				<h3 class="Cards-item__title h-reset h-posotopn-t">Some title</h3>
+				<img class="Cards-item__img" src="img/works/2.jpg" alt="card-img">
+			</div>
+			<div class="Cards-item__content">
+				<p class="Cards-item__text-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at
+					consequuntur distinctio fugit, illo laudantium officiis rerum sunt vel voluptates?</p>
+			</div>
+			<div class="Cards-item__price">
+				<span>100$</span>
+			</div>
+			<div class="Cards-item__divider"></div>
+			<div class="Cards-item__footer">
+				<a href="" class="Cards-item__link">подробнее</a>
+				<button class="Cards-item__add-button" data-item-id="1226" data-item-img="img/works/3.jpg"
+								data-item-name="Some title" data-item-weight="12.00" data-item-price="12.56">add
+				</button>
+			</div>
+		</acticle>
+	</div>
+	
+	<div class="Cards-row">
+		<acticle class="Cards-item shadow_lg">
+			<div class="Cards-item__img-wrapper">
+				<h3 class="Cards-item__title h-reset h-posotopn-t">Some title</h3>
+				<img class="Cards-item__img" src="img/works/2.jpg" alt="card-img">
+			</div>
+			<div class="Cards-item__content">
+				<p class="Cards-item__text-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at
+					consequuntur distinctio fugit, illo laudantium officiis rerum sunt vel voluptates?</p>
+			</div>
+			<div class="Cards-item__price">
+				<span>100$</span>
+			</div>
+			<div class="Cards-item__divider"></div>
+			<div class="Cards-item__footer">
+				<a href="" class="Cards-item__link">подробнее</a>
+				<button class="Cards-item__add-button" data-item-id="1226" data-item-img="img/works/3.jpg"
+								data-item-name="Some title" data-item-weight="12.00" data-item-price="12.56">add
+				</button>
+			</div>
+		</acticle>
+		<acticle class="Cards-item shadow_lg">
+			<div class="Cards-item__img-wrapper">
+				<h3 class="Cards-item__title h-reset h-posotopn-t">Some title</h3>
+				<img class="Cards-item__img" src="img/works/2.jpg" alt="card-img">
+			</div>
+			<div class="Cards-item__content">
+				<p class="Cards-item__text-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at
+					consequuntur distinctio fugit, illo laudantium officiis rerum sunt vel voluptates?</p>
+			</div>
+			<div class="Cards-item__price">
+				<span>100$</span>
+			</div>
+			<div class="Cards-item__divider"></div>
+			<div class="Cards-item__footer">
+				<a href="" class="Cards-item__link">подробнее</a>
+				<button class="Cards-item__add-button" data-item-id="1226" data-item-img="img/works/3.jpg"
+								data-item-name="Some title" data-item-weight="12.00" data-item-price="12.56">add
+				</button>
+			</div>
+		</acticle>
+		<acticle class="Cards-item shadow_lg">
+			<div class="Cards-item__img-wrapper">
+				<h3 class="Cards-item__title h-reset h-posotopn-t">Some title</h3>
+				<img class="Cards-item__img" src="img/works/2.jpg" alt="card-img">
+			</div>
+			<div class="Cards-item__content">
+				<p class="Cards-item__text-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at
+					consequuntur distinctio fugit, illo laudantium officiis rerum sunt vel voluptates?</p>
+			</div>
+			<div class="Cards-item__price">
+				<span>100$</span>
+			</div>
+			<div class="Cards-item__divider"></div>
+			<div class="Cards-item__footer">
+				<a href="" class="Cards-item__link">подробнее</a>
+				<button class="Cards-item__add-button" data-item-id="1226" data-item-img="img/works/3.jpg"
+								data-item-name="Some title" data-item-weight="12.00" data-item-price="12.56">add
+				</button>
+			</div>
+		</acticle>
+	</div>
+
+</section>
+
+<section class="Section Section--devices">
+	<div class="Container">
+		<div class="Section__header">
+			<h3 class="Section__suptitle">Новый заголовок</h3>
+			<h2 class="Section__title">Позаголовок</h2>
 		</div>
-		
+		<div class="Devices">
+			<img src="img/works/1.jpg" alt="" class="Devices__item">
+		</div>
 	</div>
 </section>
 

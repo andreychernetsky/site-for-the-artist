@@ -2,7 +2,6 @@
 @import "partials/mixins";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 //оформление магазина
-
 /*
 @import "shop/Header";
 @import "shop/Logo";
@@ -15,7 +14,6 @@
 @import "shop/SmallSnippet";
 @import "shop/Footer";
 */
-
 //@import "block/top";
 /*@import "block/menu-open";
 @import "block/menu";
@@ -31,33 +29,73 @@
 @import "mongo/CardProduct";
 @import "mongo/pagination";
 @import "mongo/Devices";
+@import "mongo/Cards-item";
 
-
- .Page{
-  margin: 0;
-  font-family:'Montserrat',sans-serif;
-  font-size: 1rem;
-  color: #333333;
+.Page {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #333333;
 }
+
 *,
 *:before,
 *:after {
- -webkit-box-sizing: border-box;
- -moz-box-sizing: border-box;
- box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .Container {
- width: 100%;
- min-width:1200px;
- margin:0 auto;
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
 }
+
 .Row {
- width: 100%;
- display: flex;
- justify-content: space-around;
- align-items: center;
- flex-flow: row wrap;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.Cards-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 0 20px;
+}
+
+@media (max-width: 770px) {
+    /* Section */
+    .Section {
+        padding: 40px 0;
+    }
+
+    .Section--devices {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    /* Section */
+    .Section__header {
+        margin-bottom: 50px;
+    }
+
+    .Section__suptitle {
+        font-size: 20px;
+    }
+
+    .Section__title {
+        font-size: 24px;
+    }
+
+    .Section__title:after {
+        margin: 20px auto;
+    }
 }
 
 

@@ -33,3 +33,8 @@
       color: #fce38a; }
     .Nav__link.active:after {
       opacity: 1; }
+
+@media (max-width: 770px) {
+  /* Nav */
+  .Nav {
+    display: none; } }

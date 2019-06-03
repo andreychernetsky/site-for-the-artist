@@ -1,0 +1,42 @@
+.shadow_sm {
+  -webkit-box-shadow: 1px 1px 5px #aaa;
+          box-shadow: 1px 1px 5px #aaa; }
+
+.shadow_md {
+  -webkit-box-shadow: 3px 3px 5px #aaa;
+          box-shadow: 3px 3px 5px #aaa; }
+
+.shadow_md {
+  -webkit-box-shadow: 6px 6px 30px #aaa;
+          box-shadow: 6px 6px 30px #aaa; }
+
+.shadow_xl {
+  -webkit-box-shadow: 10px 10px 50px #aaa;
+          box-shadow: 10px 10px 50px #aaa; }
+
+.Cards-item {
+  width: 1200px; }
+  .Cards-item-item {
+    max-width: 100%;
+    position: relative;
+    z-index: 1; }
+
+@media screen and (min-width: 1200px) {
+  .Cards {
+    width: -webkit-calc(100% / 3);
+    width: calc(100% / 3); } }
+
+@media screen and (max-width: 1200px) {
+  .Cards {
+    width: -webkit-calc(100% / 3);
+    width: calc(100% / 3); } }
+
+@media screen and (max-width: 800px) {
+  .Cards {
+    width: -webkit-calc(100% / 2);
+    width: calc(100% / 2); } }
+
+@media screen and (max-width: 590px) {
+  .Cards {
+    width: -webkit-calc(100%);
+    width: calc(100%); } }

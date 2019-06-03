@@ -30,3 +30,18 @@
   .Services__text {
     font-size: 1rem;
     color: #999999; }
+
+@media (max-width: 770px) {
+  /* Services */
+  .Services {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .Services__item {
+    width: 100%;
+    max-width: 400px;
+    padding-left: 55px;
+    padding-right: 0; }
+  .Services__icon {
+    left: 0; } }
