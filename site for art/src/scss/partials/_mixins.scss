@@ -1,0 +1,16 @@
+@mixin outline {
+ outline: 1px solid black;
+}
+
+@mixin column {
+     display: flex;
+    flex-direction: column;
+
+}
+@mixin justify-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

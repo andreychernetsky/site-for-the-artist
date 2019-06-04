@@ -1,0 +1,45 @@
+@import "../partials/mixins";
+@import "../partials/params";
+
+.Section {
+    max-width:$view-port;
+    margin: 0 auto;
+    padding: 80px 0;
+    &__header {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto 50px;
+        text-align: center;
+    }
+    &__suptitle {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 24px;
+        color: #333;
+    }
+}
+@media (max-width: 770px) {
+
+    /* Section */
+    .Section {
+        padding: 40px 0;
+    }
+
+}
+@media (max-width: 575px) {
+    /* Section */
+    .Section__header {
+        margin-bottom: 50px;
+    }
+
+    .Section__suptitle {
+        font-size: 20px;
+    }
+
+    .Section__title {
+        font-size: 24px;
+    }
+
+    .section__title:after {
+        margin: 20px auto;
+    }
+}
