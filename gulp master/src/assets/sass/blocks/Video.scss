@@ -1,0 +1,9 @@
+.Video {
+    width: 100%;
+    //@include outline;
+    &__blog {
+        margin: 10px auto;
+        border-radius: 10px;
+        display: block;
+    }
+}
