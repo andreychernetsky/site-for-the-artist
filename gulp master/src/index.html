@@ -26,17 +26,17 @@
 	</style>-->
 </head>
 <body class="Page">
-<header class="Header" id="Header">
+<header class="Header" id="header">
 	<div class="Container">
 		<div class="Header__inner">
-			<div class="Header__logo">yourLogo</div>
+			<div class="Header__logo" data-scroll="#intro">yourLogo</div>
 			
-			<nav class="Nav">
-				<a class="Nav__link active" href="#">about</a>
+			<nav class="Nav" id="nav">
+				<a class="Nav__link " href="#" data-scroll = "#Accordion">about</a>
 				<a class="Nav__link" href="#">Service</a>
 				<a class="Nav__link" href="#">Blog</a>
-				<a class="Nav__link" href="#">Work</a>
-				<a class="Nav__link" href="#">Contact</a>
+				<a class="Nav__link" href="#" data-scroll = "#card">Work</a>
+				<a class="Nav__link" href="#"  data-scroll = "#Footer">Contact</a>
 				<a class="Nav__link" href="#">
 					<i class="fas fa-shopping-cart"></i>
 				</a>
@@ -51,7 +51,7 @@
 		</div>
 	</div>
 </header>
-<div class="Intro" id="Intro">
+<div class="Intro" id="intro">
 	<div class="Container">
 		<div class="Intro__inner">
 			<h2 class="Intro__suptitle">Можно сделать фото на весь экран</h2>
@@ -61,7 +61,7 @@
 		</div>
 	</div>
 </div><!-- /.intro -->
-<section class="Section">
+<section class="Section"  id="Accordion" >
 	<div class="Container">
 		<div class="Section__header">
 			<h3 class="Section__suptitle"> blog</h3>
@@ -89,27 +89,27 @@
 				</div>
 				<div class="Wedo__right">
 					<div class="Accordion">
-						<div class="Accordion__item">
-							<div class="Accordion__header">
+						<div class="Accordion__item" data-collapse = "#wedo_1">
+							<div class="Accordion__header" >
 								<img class="Accordion__icon" src="img/services/photography.png" alt="">
 								<div class="Accordion__title">
 									Тематческая фотка
 								</div>
 							</div>
-							<div class="Accordion__content">
+							<div class="Accordion__content" id = "wedo_1">
 								<p class="Accordion__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cumque
 									deleniti dolorum earum laborum mollitia perferendis quia sed soluta tenetur? Aut facilis fugit maxime
 									modi
 									neque odit tenetur veniam voluptatibus.</p>
 							</div>
 						</div>
-						<div class="Accordion__item active">
+						<div class="Accordion__item active" data-collapse = "#wedo_2">
 							<div class="Accordion__header">
 								<img class="Accordion__icon" src="img/services/digital.png" alt="">
 								<div class="Accordion__title">
 									Тематческая фотка
 								</div>
-								<div class="Accordion__content">
+								<div class="Accordion__content" id = "wedo_2">
 									<p class="Accordion__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
 										cumque
 										deleniti dolorum earum laborum mollitia perferendis quia sed soluta tenetur? Aut facilis fugit
@@ -119,13 +119,13 @@
 								</div>
 							</div>
 							
-							<div class="Accordion__item">
+							<div class="Accordion__item active" data-collapse = "#wedo_3">
 								<div class="Accordion__header">
 									<img src="img/services/webdesign.png" alt="" class="Accordion__icon">
 									<div class="Accordion__title">
 										Название блога
 									</div>
-									<div class="Accordion__content">
+									<div class="Accordion__content" id = "wedo_3">
 										<p class="Accordion__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
 											blanditiis
 											commodi, eaque error excepturi itaque laudantium praesentium rem repudiandae sint! Ad, aperiam
@@ -135,14 +135,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="Accordion__item">
+						<div class="Accordion__item active" data-collapse = "#wedo_4">
 							<div class="Accordion__header">
 								<img class="Accordion__icon" src="img/services/photography.png" alt="">
 								<div class="Accordion__title">
 									Тематческая фотка
 								</div>
 							</div>
-							<div class="Accordion__content">
+							<div class="Accordion__content" id = "wedo_4">
 								<p class="Accordion__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cumque
 									deleniti dolorum earum laborum mollitia perferendis quia sed soluta tenetur? Aut facilis fugit maxime
 									modi
@@ -164,7 +164,7 @@
 		</div>
 	</div>
 	
-	<div class="Cards-row">
+	<div class="Cards-row" id = "card">
 		<acticle class="Cards-item shadow_lg">
 			<div class="Cards-item__img-wrapper">
 				<h3 class="Cards-item__title ">Название товара</h3>
