@@ -58,7 +58,7 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background: url("../../../assets/i/intro.jpg") center no-repeat;
+    background: url("../i/intro.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
