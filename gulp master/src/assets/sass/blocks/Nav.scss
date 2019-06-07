@@ -46,6 +46,20 @@
 
     .Nav {
         display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #eb8b8d;
+
+    }
+    &.active {
+        display: block;
+    }
+    &__link {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
     }
 }
 

@@ -58,7 +58,7 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background: url("../i/intro.jpg") center no-repeat;
+    background: url("../../i/intro.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -194,6 +194,21 @@
 @media (max-width: 770px) {
     .Nav {
         display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #eb8b8d;
+    }
+
+    .active {
+        display: block;
+    }
+
+    __link {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
     }
 }
 
@@ -531,7 +546,7 @@
 }
 
 .Accordion .active, .Accordion__button:hover {
-    background: yellow;
+    background: #EA9485;
 }
 
 .Accordion__panel {
@@ -596,6 +611,12 @@
     -o-transition: transform .2s linear;
     transition: transform .2s linear;
     transition: transform .2s linear, -webkit-transform .2s linear;
+}
+
+@media (max-width: 770px) {
+    .nav-toggle {
+        display: block;
+    }
 }
 
 .nav-toggle__item:before {
