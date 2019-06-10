@@ -5,10 +5,15 @@
     z-index: 1;
 
     &__img-wrapper {
+        transition: transform .2s;
+        margin: 0 auto;
         position: relative;
         min-width: 100%;
         height: 200px;
         overflow: hidden;
+        &:hover {
+            transform: scale(1.7);
+        }
     }
     &__img {
         max-width:100%;

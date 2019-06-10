@@ -80,6 +80,16 @@ for(i = 0; i < acc.length; i++) {
   });
 }
 
+ function mobile() {
+   const menu = document.getElementById("Nav");
+   if (menu.style.display === "block") {
+     menu.style.display = "none";
+   } else {
+     menu.style.display = "block";
+   }
+ }
+
+ document.getElementById('nav_toggle').addEventListener('click', mobile);
 
 
 

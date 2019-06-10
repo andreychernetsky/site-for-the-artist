@@ -28,23 +28,34 @@
 	</style>-->
 </head>
 <body class="Page">
+<div class="Icon-bar">
+	<a href="#" class="Icon-bar__facebook"><i class="fa fa-facebook"></i></a>
+	<a href="#" class="Icon-bar__twitter"><i class="fa fa-twitter"></i></a>
+	<a href="#" class="Icon-bar__google"><i class="fa fa-google"></i></a>
+	<a href="#" class="Icon-bar__linkedin"><i class="fa fa-linkedin"></i></a>
+	<a href="#" class="Icon-bar__youtube"><i class="fa fa-youtube"></i></a>
+</div>
+
 <header class="Header" id="header">
 	<div class="Container">
 		<div class="Header__inner">
 			<div class="Header__logo" data-scroll="#intro">yourLogo</div>
 			
-			<nav class="Nav" id="nav">
-				<a class="Nav__link " href="#" data-scroll="#Accordion">about</a>
-				<a class="Nav__link" href="#">Service</a>
-				<a class="Nav__link" href="#">Blog</a>
-				<a class="Nav__link" href="#" data-scroll="#card">Work</a>
-				<a class="Nav__link" href="#" data-scroll="#Footer">Contact</a>
-				<a class="Nav__link" href="#">
-					<i class="fas fa-shopping-cart"></i>
-				</a>
-				<a class="Nav__link" href="#">
-					<i class="fas fa-search"></i>
-				</a>
+			<nav class="Nav" id="Nav">
+				<div class="Nav__menu">
+					<a class="Nav__link " href="#" data-scroll="#Accordion">about</a>
+					<a class="Nav__link" href="#">Service</a>
+					<a class="Nav__link" href="#">Blog</a>
+					<a class="Nav__link" href="#" data-scroll="#card">Work</a>
+					<a class="Nav__link" href="#" data-scroll="#Footer">Contact</a>
+					<a class="Nav__link" href="#">
+						<i class="fas fa-shopping-cart"></i>
+					</a>
+					<a class="Nav__link" href="#">
+						<i class="fas fa-search"></i>
+					</a>
+				</div>
+			
 			</nav>
 			
 			<button class="nav-toggle" id="nav_toggle" type="button">
@@ -135,7 +146,7 @@
 	</div>
 	
 	<div class="Cards-row" id="card">
-		<acticle class="Cards-item shadow_lg">
+		<acticle class="Cards-item">
 			<div class="Cards-item__img-wrapper">
 				<h3 class="Cards-item__title ">Название товара</h3>
 				<img class="Cards-item__img" src="assets/i/img/works/2.jpg" alt="card-img">
