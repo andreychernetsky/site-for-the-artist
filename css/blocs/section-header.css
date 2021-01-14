@@ -1,0 +1,25 @@
+.section-header {
+	padding: 40px 0;
+}
+.section-header__title {
+	margin: 0;
+	margin-bottom: 10px;
+	font-family: 'Playfair Display' serif;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 2rem;
+	line-height: 1.5;
+	text-align: center;
+	color: #1a1818;
+}
+.section-header__desc {
+	display: block;
+	max-width: 730px;
+	font-style:norm;
+	font-weight: normal;
+	font-size: 1.4rem;
+	line-height: 1.8;
+	text-align: center;
+	color:#1b1919;
+
+}
