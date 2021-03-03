@@ -1,0 +1,9 @@
+.wedo {
+    min-width: 350px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+  }
+  .wedo__item {
+    width: 48%;
+  }

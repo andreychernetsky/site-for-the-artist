@@ -1,0 +1,66 @@
+.services {
+    margin-bottom: 20px;
+    padding: 50px 0 30px;
+    width: 100%;
+    height: 100vh;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size:cover;
+}
+.services--muzic {
+  background-image:url('./../../images/phone/muzic.jpg');
+}
+.services--game {
+    background-image:url('./../../images/phone/gameFone.jpg');
+  }
+  .services--midi {
+    background-image:url('./../../images/phone/midi.jpg');
+  }
+  .services--web {
+    background-image:url('./../../images/phone/webStudy.jpg');
+  }
+  .services-picture {
+    background-image:url('./../../images/phone/picture.jpg');
+  }
+  .services-lager {
+    background-image:url('./../../images/phone/pohod.jpg');
+  }
+.services__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:30px;
+}
+.services__title-box {
+    max-width: 620px;
+    padding-left: 140px;
+    position: relative;
+}
+.services__title-box:before {
+    content:'';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: #ffc222;
+    left: 0;
+    top: 11px;
+}
+.services__title {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    font-family: 'Akaya Telivigala', cursive;
+    margin-bottom: 0.6rem;
+}
+.services__text {
+    letter-spacing: 0.1px;
+    font-style:italic;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(165, 34, 34);
+}
+.services__btn a{
+    color:#373636;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    padding: 5px 38px;
+    border:3px solid #e2a90c;
+}

@@ -1,0 +1,85 @@
+.accordion {
+    width: 100%;
+  }
+  .accordion__button {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      border-radius: 0;
+      color: #444;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.25;
+      outline: medium none;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: none;
+      -webkit-transition: all 0.2s ease 0s;
+      transition: all 0.2s ease 0s;
+      vertical-align: middle;
+      white-space: normal;
+      width: 100%;
+      -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+              box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    }
+    
+    .accordion__button.active, .accordion__button:hover, .accordion__button:focus {
+      background-color: #eee;
+      color: #444;
+      text-decoration: none;
+    }
+    
+    .btn {
+      display: block;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: black;
+      border-bottom: 1px solid #202c80;
+      padding: 5px 10px;
+    }
+    
+    .btn:hover, .btn:focus {
+      color: #c8bed3;
+      font-weight: 600;
+      /* border-bottom: 1px solid #520611; */
+    }
+    
+    .accordion__button:after {
+      content: '\25bc';
+      /* Unicode down arrow */
+      font-size: 13px;
+      color: #777;
+      float: right;
+      margin-left: 5px;
+    }
+    
+    .accordion__button.active:after {
+      content: "\25b2";
+      /* Unicode up arrow */
+    }
+    
+    .accordion__panel {
+      overflow: hidden;
+      border: none;
+      width: 95%;
+      margin: auto;
+      background: #ede9ee;
+      line-height: 1.6;
+      font-size: 1rem;
+      font-weight: 500;
+      max-height: 0;
+      -webkit-transition: padding 0.5s, max-height 0.5s;
+      transition: padding 0.5s, max-height 0.5s;
+      -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+              box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    }
+    
+    .accordion__panel.show {
+      border-bottom: 1px solid #ddd;
+      display: block;
+    }
+    
+    .accordion__descrip:last-child {
+      margin: 0;
+    }

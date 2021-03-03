@@ -1,0 +1,33 @@
+.intro {
+    width: 100%;
+    padding-top: 35px;
+}
+.intro__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: c;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+   
+    position: relative;
+}
+
+.intro__video {
+    display: block;
+}
+.intro__image {
+    display: block;
+    max-width: 100%;
+    padding-top: 35px;
+}
+
+.intro__title {
+    font-size: 4rem;
+    font-family: 'Akaya Telivigala', cursive;
+    
+}
+.intro__suptitle {
+    font-size: 2rem;
+    line-height:1.3;
+}
