@@ -1,4 +1,5 @@
-const accButton = document.querySelectorAll('.accordion__button');
+{
+  const accButton = document.querySelectorAll('.accordion__button');
   accButton.forEach(btn => btn.addEventListener('click',()=>{
     const openButton = btn.nextElementSibling.classList.contains('accordion__panel--open');
     if(openButton) {
@@ -37,3 +38,47 @@ const accButton = document.querySelectorAll('.accordion__button');
     overlay.classList.remove('open');
    
   })
+
+}
+// прокрутка по якорям
+
+  {
+    const anchors = document.querySelectorAll("[href*='#']");
+    for(let anchor of anchors) {
+      anchor.addEventListener('click',(e)=>{
+        e.preventDefault;
+        const blockid = anchor.getAttribute('href')
+       document.querySelector('',blockid).scrollIntoView({
+         behavior:'smooth',
+         block:'start'
+       })
+      })
+    }
+    
+  }
+
+  // скролл по кнопке
+  {
+    function trackScroll() {
+      let scrolled = window.pageXOffset
+      let coords = document.documentElement.clientHeight;
+
+      if(scrolled > coords) {
+        goTopBtn.classList.add('topButton__show');
+      }
+      if(scrolled < coords) {
+        goTopBtn.classList.remove('topButton__show')
+      }
+    }
+
+    function backToTop() {
+      if(window.pageYOffset > 0) {
+        window.scrollBy(0,-80);
+        setTimeout(backToTop, 0);
+      }
+    }
+
+    let goTopBtn = document.querySelector('.topButton');
+    window.addEventListener('scroll',trackScroll);
+    goTopBtn.addEventListener('click',backToTop);
+  }

@@ -54,9 +54,11 @@
     transform:rotate(-45deg) translate3d(0 3px 0);
 }
 
-@media(max-width:950px) {
+@media(max-width:1150px) {
     .burger {
       display: block;
+      position: fixed;
+      z-index: 300;
     }
   }
   

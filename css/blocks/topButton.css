@@ -1,0 +1,23 @@
+.topButton {
+    position: fixed;
+    font-size: 2rem;
+    bottom:40px;
+    right: 9px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    background: rgb(129, 44, 125);
+    opacity: 0.3;
+    color: rgb(10, 10, 10);
+    border-radius: 2px;
+    display:block;
+}
+.topButton{
+    background: rgb(226, 7, 7);
+    opacity: 1;
+}
+.topButton__show {
+    display: block;
+}
