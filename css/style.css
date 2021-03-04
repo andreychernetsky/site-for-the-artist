@@ -123,21 +123,21 @@ h6 {
 }
 
 
-
-@media(max-width: 790px) {
-  .footer__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer__info,
-  .footer__schedule,
-  .footer__social {
-    width: 100%;
-  }
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
 }
 
+.none {
+  display: none;
+}
 
 
 
@@ -146,127 +146,16 @@ h6 {
 }
 
 @media(max-width:950px) {
-  .header__row {
-    justify-content: center;
+ 
+  
 
-  }
-  .intro__suptitle {
-    margin-top: 10px;
-    font-size: 1.5rem;
-  }
-
-  .intro__title {
-    font-size: 2.5rem;
-    
-  }
-  .overlay {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 100;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .nav {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    left: 0;
-    top: 0;
-    max-width: 400px;
-    width: 40%;
-    height: 50%;
-    z-index: 400;
-    background: #fff;
-    box-shadow: 5px 0 15px -5px rgba(0, 0, 0, 0.8);
-    transform: translateX(-150vw);
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-
-  .nav__link {
-    display: block;
-    padding: 10px;
-
-  }
-
-  .burger {
-    display: block;
-  }
-
-  .services__top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .services__title-box {
-    padding-left: 0;
-    text-align: center;
-    margin: 0 auto 30px;
-  }
-
-  .services__title-box::before {
-    display: none;
-  }
-
-  .services__btn a {
-    text-align: center;
-  }
+  
 }
 
 @media(max-width:900px) {
-  .intro {
-    min-height: 500px;
-  }
-
-  .wedo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .wedo__item {
-    width: 100%;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .intro__inner {
-    height: 0;
-  }
-
-  .intro__suptitle {
-    font-size: 1.5rem;
-  }
-
-  .intro__title {
-    font-size: 3rem;
-  }
+  
 }
 
 @media(max-width:575px) {
-  .intro {
-    min-height: 350px;
-  }
-
-  .tel,
-  .logo {
-    font-size: 1rem;
-  }
-
-  .intro__suptitle {
-    padding-top: 11px;
-    font-size: 1rem;
-  }
-
-  .intro__title {
-    padding-top: 10px;
-    font-size: 1.5rem;
-  }
+ 
 }

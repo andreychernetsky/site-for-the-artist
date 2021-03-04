@@ -2,7 +2,7 @@
     margin-bottom: 20px;
     padding: 50px 0 30px;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
    background-position: center;
    background-repeat: no-repeat;
    background-size:cover;
@@ -63,4 +63,39 @@
     letter-spacing: 0.25px;
     padding: 5px 38px;
     border:3px solid #e2a90c;
+}
+@media(max-width:1200px) {
+  
+}
+
+@media(max-width:950px) {
+ .services__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services__title-box {
+    padding-left: 0;
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+
+  .services__title-box::before {
+    display: none;
+  }
+
+  .services__btn a {
+    text-align: center;
+  }
+}
+
+@media(max-width:900px) {
+ 
+
+ 
+}
+
+@media(max-width:575px) {
+  
 }
