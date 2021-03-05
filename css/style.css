@@ -140,23 +140,38 @@ h6 {
   display: none;
 }
 
+.section {
+  width: 100%;
+  margin: 15px auto;
 
-
-@media(max-width:1200px) {
-  
 }
 
-@media(max-width:950px) {
+.section__header {
+  text-align: center;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__suptitle {
+  
+  font-size: 24px;
  
-  
-
-  
+  font-family: 'Akaya Telivigala', cursive;
 }
 
-@media(max-width:900px) {
-  
-}
-
-@media(max-width:575px) {
+.section__title {
  
+  font-size: 30px;
+  font-weight: 700;
+  color: #333;
 }
+
+@media(max-width:1200px) {}
+
+@media(max-width:950px) {}
+
+@media(max-width:900px) {}
+
+@media(max-width:575px) {}
