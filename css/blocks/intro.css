@@ -1,6 +1,7 @@
 .intro {
     width: 100%;
     padding-top: 35px;
+    margin-bottom: 30px;
 }
 .intro__inner {
     display: flex;
