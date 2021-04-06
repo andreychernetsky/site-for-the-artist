@@ -1,5 +1,6 @@
 .accordion {
     width: 100%;
+    margin-bottom: 15px;
   }
   .accordion__button {
       background-color: #fff;
@@ -35,8 +36,8 @@
       text-decoration: none;
       font-size: 1.2rem;
       color: black;
-      border-bottom: 1px solid #202c80;
-      padding: 5px 10px;
+      /* border-bottom: 1px solid #202c80; */
+      padding: 1px 10px 5px ;
     }
     
     .btn:hover, .btn:focus {
