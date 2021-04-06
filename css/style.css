@@ -124,7 +124,9 @@ ul {
   max-width: 1230px;
   padding: 0 15px;
 }
-
+.video {
+  max-width: 100%;
+}
 
 .overlay {
   position: fixed;
