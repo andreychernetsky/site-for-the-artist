@@ -43,15 +43,29 @@
 // прокрутка по якорям
 
   {
-    const anchors = document.querySelectorAll("[href*='#']");
-    for(let anchor of anchors) {
-      anchor.addEventListener('click',(e)=>{
-        e.preventDefault;
-        const blockid = anchor.getAttribute('href')
-       document.querySelector('',blockid).scrollIntoView({
-         behavior:'smooth',
-         block:'start'
-       })
+    // const anchors = document.querySelectorAll("[href*='#']");
+    // for(let anchor of anchors) {
+    //   anchor.addEventListener('click',(e)=>{
+    //     e.preventDefault;
+    //     const blockid = anchor.getAttribute('href')
+    //    document.querySelector('',blockid).scrollIntoView({
+    //      behavior:'smooth',
+    //      block:'start'
+    //    })
+    //   })
+    // }
+    const anchors = document.querySelectorAll('a[href*="#"]')
+
+    for (let anchor of anchors) {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        const blockID = anchor.getAttribute('href');
+  
+        document.querySelector('' + blockID).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
       })
     }
     
