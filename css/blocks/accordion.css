@@ -8,7 +8,7 @@
       border-radius: 0;
       color: #444;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 1.5rem;
       font-weight: 600;
       line-height: 1.25;
       outline: medium none;
@@ -70,8 +70,9 @@
       margin: auto;
       background: #ede9ee;
       line-height: 1.6;
-      font-size: 1rem;
-      font-weight: 500;
+      color: #444;
+      font-size: 1.5rem;
+      font-weight:bolder;
       max-height: 0;
       -webkit-transition: padding 0.5s, max-height 0.5s;
       transition: padding 0.5s, max-height 0.5s;
