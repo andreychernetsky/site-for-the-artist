@@ -1,0 +1,35 @@
+.header {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    &__top {
+        background: #303030;
+        
+    }
+    &__contakts {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        // width: 40%;
+    }
+    &__phone {
+        color:#ebcacd;
+        font-size: 25px;
+        letter-spacing: 0.25px;
+        line-height: 45px;
+        position: relative;
+    }
+    &__vk {
+        fill:#ffc222;
+        
+    }
+    &__yotube {
+        fill:rgb(180, 23, 23)
+    }
+    &__icon-vk,
+     &__icon-yotube {
+        height: 40px;
+        width: 40px;
+    }
+
+   
+}

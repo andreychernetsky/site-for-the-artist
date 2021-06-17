@@ -1,0 +1,75 @@
+.accordion {
+  padding-top: 30px;
+  max-width: 100%;
+  text-align: center;
+  &__button {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    color: #444;
+    cursor: pointer;
+    font-size:1rem;
+    font-weight: 600;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.2s ease 0s;
+    vertical-align: middle;
+    white-space: normal;
+    width: 100%;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    &.active,
+    &:hover,
+    &:focus {
+      background-color: #eee;
+      color: #444;
+      text-decoration: none;
+    }
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    border-bottom: 1px solid #202c80;
+    padding: 5px 10px;
+    &:hover,&:focus {
+      color: #7e47bb;
+      font-weight: 600;
+
+    }
+  }
+  &__button:after {
+    content: '\25bc'; /* Unicode down arrow */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  &__button.active:after {
+    content: "\25b2"; /* Unicode up arrow */
+  }
+  &__panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 95%;
+    margin:auto;
+    background: #f2d1fa;
+    line-height: 1.6;
+    font-size: 1rem;
+    font-weight: 500;
+    max-height: 0;
+    transition: padding 0.5s, max-height 0.5s;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    //box-shadow: 0 5px 4px 0 rgba(0 0 0.8), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+}
+
+
+
+

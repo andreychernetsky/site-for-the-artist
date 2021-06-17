@@ -1,0 +1,31 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+   
+    &__link {
+        display: block;
+        font-size: 18px;
+        color: darkgreen;
+        text-decoration:none;
+    }
+    &.open {
+        transform:translateX(0);
+        transition: all 0.3s;
+    }
+}
+@media(max-width:760px) {
+    .menu {
+        position: fixed;
+        z-index: 400;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        top: 50px;
+        max-width: 400px;
+        width: 60%;
+        box-shadow: 5px 0 15px -5px rgba(0,0,0,0.8);
+        transform: translateX(-150vw);
+        overflow-x: hidden;
+        overflow-y:auto ;
+    }
+}
